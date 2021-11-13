@@ -1,13 +1,14 @@
 import tw from 'tailwind-styled-components'
-import Map from './components/Map'
-import Start from './Start'
+import Head from 'next/head'
 import Login from './Login'
 
 export default function Home() {
     return ( 
     <Wrapper>
-        {/* <Map />
-        <Start /> */}
+        <Head>
+            <title>Uber Clone</title>
+            <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+        </Head>
         <Login />
     </Wrapper>
     )
